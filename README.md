@@ -18,7 +18,25 @@ sudo apt-get install ros-melodic-rqt ros-melodic-rqt-common-plugins ros-melodic-
 mkdir -p ca_catkin_ws/src
 
 sudo apt-get update
+
 sudo apt-get install -y python-wstool python-rosdep ninja-build stow
+
+cd catkin_ws
+
+catkin_init_workspace
+
+cd src
+
+git clone https://github.com/Slamtec/rplidar_ros.git
+
+cd ..
+
+
+
+
+
+
+
 
 ----
 ----
