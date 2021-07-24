@@ -1,5 +1,14 @@
 # Cartographer-SLAM-for-Non-GPS-Navigation
 
+
+sudo apt-get install python-catkin-tools
+
+mkdir -p path_to_my_workspace/workspace_name/src
+
+cd path_to_my_workspace/workspace_name/src
+
+catkin_init_workspace
+
 # Mavros install
 
 sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras
