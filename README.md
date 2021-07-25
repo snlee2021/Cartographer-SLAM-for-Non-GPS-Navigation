@@ -56,5 +56,42 @@ src/cartographer/scripts/install_abseil.sh
 sudo apt-get remove ros-${ROS_DISTRO}-abseil-cpp
 
 
+sudo apt-get install python-catkin-tools
+
+cd resizeSwapMemory
+
+/setSwapMemorySize.sh -g 10
+
 
 catkin build
+
+sudo apt-get install ros-melodic-navigation
+
+### command)
+
+cd ca_catkin_ws
+
+source devel/setup.bash
+
+sudo chmod -R 777 /dev/ttyUSB0 
+
+roslaunch rplidar_ros rplidar.launch
+
+
+
+cd ca_catkin_ws
+
+source devel/setup.bash
+
+roslaunch cartographer_ros cartographer.launch
+
+
+roslaunch mavros apm.launch fcu_url:=udp://:14855@
+
+
+cd ca_catkin_ws
+
+source devel/setup.bash
+
+roslaunch ap_navigation ap_nav.launch
+
