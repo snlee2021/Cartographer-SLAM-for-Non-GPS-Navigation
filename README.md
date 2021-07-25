@@ -67,6 +67,8 @@ catkin build
 
 sudo apt-get install ros-melodic-navigation
 
+obal_costmap_params.yaml=====> /map -> map
+
 ### command)
 
 cd ca_catkin_ws
